@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import Greet from './components/Greet'
 import Welcome from './components/Welcome';
@@ -11,11 +11,23 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import StyleSheet from './components/StyleSheet';
+import InlineCSS from './components/InlineCSS';
+import './components/appStyle.css'
+import Styles from './components/appStyle.module.css'
+import Form from './components/Form';
+import LifeCycyleA from './components/LifeCycyleA';
 
 function App() {
   return (
     <div className="App">
-      <NameList />
+      <LifeCycyleA />
+      {/* <Form /> */}
+      {/* <h1 className='error'>Error</h1> */}
+      {/* <h1 className={Styles.success}>success</h1> */}
+      {/* <InlineCSS /> */}
+      {/* <StyleSheet primary ={true} /> */}
+      {/* <NameList /> */}
       {/* <UserGreeting /> */}
       {/* <ParentComponent /> */}
       {/* <EventBind /> */}
