@@ -20,6 +20,21 @@ class LifeCycyleB extends Component {
         console.log('compoB...Did')
     }
 
+    shouldComponentUpdate(){
+        console.log('A should...')
+        return true
+    }
+
+    getSnapshotBeforeUpdate(){
+        console.log('A getSnap...')
+        return null
+    }
+
+    componentDidUpdate(){
+        console.log('A update...')
+        return null
+    }
+
   render() {
     console.log('renderB')
     return (

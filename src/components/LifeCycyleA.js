@@ -20,12 +20,34 @@ class LifeCycyleA extends Component {
     componentDidMount(){
         console.log('compoA...Did')
     }
+    
+    shouldComponentUpdate(){
+        console.log('A should...')
+        return true
+    }
+
+    getSnapshotBeforeUpdate(){
+        console.log('A getSnap...')
+        return null
+    }
+
+    componentDidUpdate(){
+        console.log('A update...')
+        return null
+    }
+
+    changeState = () => {
+        this.setState({
+            name:'code...'
+        })
+    }
 
   render() {
     console.log('renderA')
     return (
       <div>
-        Life Cycyle A
+        Life Cycyle A<br />
+        <button onClick={this.changeState}>Change State</button>
         <LifeCycleB />
       </div>
     )
