@@ -17,11 +17,21 @@ import './components/appStyle.css'
 import Styles from './components/appStyle.module.css'
 import Form from './components/Form';
 import LifeCycyleA from './components/LifeCycyleA';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
+import PureComponents from './components/PureComponents';
+import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
 
 function App() {
   return (
     <div className="App">
-      <LifeCycyleA />
+      <RefsDemo />
+      {/* <ParentComp /> */}
+      {/* <PureComponents /> */}
+      {/* <Table /> */}
+      {/* <FragmentDemo /> */}
+      {/* <LifeCycyleA /> */}
       {/* <Form /> */}
       {/* <h1 className='error'>Error</h1> */}
       {/* <h1 className={Styles.success}>success</h1> */}
